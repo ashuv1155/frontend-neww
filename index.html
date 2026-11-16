@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InstaSave - Fast Instagram Reel Downloader</title>
-  <meta name="description" content="Download Instagram Reels and Videos in multiple qualities without redirects.">
+  <title>InstaSave - Fast Instagram Reel Downloader & Previewer</title>
+  <meta name="description" content="Preview and download Instagram Reels and Videos in multiple qualities without redirects.">
   
   <!-- Modern Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -48,7 +48,7 @@
         <a href="#features" class="hover:text-white transition">Features</a>
         <a href="#faq" class="hover:text-white transition">FAQ</a>
         <span class="hidden sm:inline-block px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-          Direct Device Save
+          Live Preview
         </span>
       </nav>
     </div>
@@ -59,13 +59,13 @@
     
     <div class="text-center max-w-2xl mx-auto mb-10">
       <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-pink-500/10 text-pink-400 border border-pink-500/20 mb-4">
-        <i class="ph ph-lightning"></i> Instant Direct Download (No Redirects)
+        <i class="ph ph-eye"></i> In-App Video Preview & Instant Save
       </span>
       <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
-        Download <span class="insta-text-gradient">Instagram Reels</span> Quality Wise
+        Preview & Download <span class="insta-text-gradient">Instagram Reels</span>
       </h1>
       <p class="text-slate-400 text-sm sm:text-base">
-        Paste reel link, choose your quality, and download straight to your phone or computer with 1 click.
+        Watch full reel preview before downloading. Select quality and save directly without redirection.
       </p>
     </div>
 
@@ -103,15 +103,33 @@
       <div id="statusMessage" class="hidden mt-3 text-xs text-center font-medium py-2 rounded-lg"></div>
     </div>
 
-    <!-- Result Display Card -->
+    <!-- Result Display Card with In-App Video Player -->
     <div id="resultCard" class="hidden w-full max-w-2xl mt-8 bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-2xl backdrop-blur-xl transition-all">
       <div class="flex flex-col sm:flex-row gap-5 items-start">
-        <!-- Thumbnail Preview -->
-        <div class="w-full sm:w-44 h-48 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex-shrink-0 relative group">
-          <img id="resultThumb" src="" alt="Thumbnail" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <i class="ph ph-play-circle text-4xl text-white"></i>
+        
+        <!-- Interactive Media Box: Poster Image OR Inline Video Player -->
+        <div class="w-full sm:w-52 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex-shrink-0 relative group flex flex-col items-center">
+          <!-- Thumbnail view -->
+          <div id="thumbnailContainer" class="w-full h-64 relative cursor-pointer">
+            <img id="resultThumb" src="" alt="Thumbnail" class="w-full h-full object-cover">
+            <div id="playOverlay" class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center group-hover:bg-black/20 transition">
+              <div class="w-12 h-12 rounded-full insta-gradient flex items-center justify-center shadow-lg shadow-pink-500/30 transform group-hover:scale-110 transition">
+                <i class="ph ph-play-fill text-xl text-white ml-0.5"></i>
+              </div>
+              <span class="mt-2 text-[11px] font-semibold text-white/90 bg-black/60 px-2 py-0.5 rounded-md">
+                Click to Preview
+              </span>
+            </div>
           </div>
+
+          <!-- Inline HTML5 Video Player (shown when Preview is clicked) -->
+          <video 
+            id="videoPlayer" 
+            controls 
+            playsinline 
+            preload="metadata"
+            class="hidden w-full h-64 object-cover bg-black rounded-xl">
+          </video>
         </div>
 
         <!-- Video Info & Quality Wise Buttons -->
@@ -126,9 +144,18 @@
             <h3 id="resultTitle" class="text-sm font-semibold text-slate-200 line-clamp-2 leading-relaxed"></h3>
           </div>
 
-          <div class="pt-1">
+          <!-- Video Preview Button Toggle -->
+          <button 
+            type="button" 
+            id="previewToggleBtn" 
+            class="w-full py-2 px-3 bg-slate-800/80 hover:bg-slate-700/80 text-pink-400 font-semibold rounded-xl text-xs flex items-center justify-center gap-1.5 border border-slate-700/60 transition">
+            <i class="ph ph-play-circle text-base"></i>
+            <span id="previewBtnText">Watch Video Preview</span>
+          </button>
+
+          <div class="pt-2 border-t border-slate-800/80">
             <div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-1">
-              <i class="ph ph-sliders"></i> Choose Download Quality:
+              <i class="ph ph-download-simple"></i> Direct Download Options:
             </div>
             <!-- Dynamic Quality Buttons Container -->
             <div id="qualityButtonsContainer" class="flex flex-col gap-2">
@@ -143,24 +170,24 @@
     <div id="features" class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-4xl mt-16 pt-8 border-t border-slate-900">
       <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
         <div class="w-8 h-8 rounded-lg bg-pink-500/10 flex items-center justify-center text-pink-400 mb-3 text-lg">
-          <i class="ph ph-download-simple"></i>
+          <i class="ph ph-play-circle"></i>
         </div>
-        <h4 class="font-bold text-sm mb-1">Direct Save</h4>
-        <p class="text-xs text-slate-400">Downloads directly as MP4 file to your device without opening new tabs or player screens.</p>
+        <h4 class="font-bold text-sm mb-1">Watch Preview</h4>
+        <p class="text-xs text-slate-400">Preview the exact video directly inside the app before choosing to download it.</p>
       </div>
       <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
         <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-3 text-lg">
-          <i class="ph ph-sliders"></i>
+          <i class="ph ph-download-simple"></i>
         </div>
-        <h4 class="font-bold text-sm mb-1">Multiple Resolutions</h4>
-        <p class="text-xs text-slate-400">Choose between HD 1080p for highest quality or SD for fast low-data mobile downloads.</p>
+        <h4 class="font-bold text-sm mb-1">Zero Redirects</h4>
+        <p class="text-xs text-slate-400">Saves directly into your device Downloads folder via stream headers.</p>
       </div>
       <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
         <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-3 text-lg">
-          <i class="ph ph-shield-check"></i>
+          <i class="ph ph-sliders"></i>
         </div>
-        <h4 class="font-bold text-sm mb-1">100% Free & Safe</h4>
-        <p class="text-xs text-slate-400">No registration, no watermark, and no data tracking.</p>
+        <h4 class="font-bold text-sm mb-1">Quality Options</h4>
+        <p class="text-xs text-slate-400">Download HD 1080p for full fidelity or SD for faster data-saving transfers.</p>
       </div>
     </div>
 
@@ -168,9 +195,9 @@
     <div id="faq" class="w-full max-w-3xl mt-14 space-y-3">
       <h3 class="text-lg font-bold text-slate-200 mb-4">Frequently Asked Questions</h3>
       <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
-        <h5 class="text-xs font-semibold text-pink-400 mb-1">Why does it download directly now?</h5>
+        <h5 class="text-xs font-semibold text-pink-400 mb-1">Does watching preview consume my server data?</h5>
         <p class="text-xs text-slate-400 leading-relaxed">
-          The backend now streams the video with direct file headers (<code class="text-slate-300">Content-Disposition: attachment</code>), instructing your browser to save the video immediately into your Downloads folder without opening in a new tab.
+          No, the preview streams directly from Instagram CDN directly into your browser player, maintaining zero load on our free server tier.
         </p>
       </div>
     </div>
@@ -195,9 +222,15 @@
     const statusMessage = document.getElementById('statusMessage');
     const resultCard = document.getElementById('resultCard');
     const resultThumb = document.getElementById('resultThumb');
+    const thumbnailContainer = document.getElementById('thumbnailContainer');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const previewToggleBtn = document.getElementById('previewToggleBtn');
+    const previewBtnText = document.getElementById('previewBtnText');
     const resultTitle = document.getElementById('resultTitle');
     const resultAuthor = document.getElementById('resultAuthor');
     const qualityButtonsContainer = document.getElementById('qualityButtonsContainer');
+
+    let currentVideoUrl = "";
 
     pasteBtn.addEventListener('click', async () => {
       try {
@@ -223,12 +256,30 @@
       statusMessage.textContent = msg;
     }
 
-    // Direct Instant Download Function (No Redirection, Triggers Browser File Save)
+    // Toggle Preview Player
+    function togglePreview() {
+      if (videoPlayer.classList.contains('hidden')) {
+        thumbnailContainer.classList.add('hidden');
+        videoPlayer.classList.remove('hidden');
+        videoPlayer.src = currentVideoUrl;
+        videoPlayer.play();
+        previewBtnText.textContent = "Hide Preview";
+      } else {
+        videoPlayer.pause();
+        videoPlayer.classList.add('hidden');
+        thumbnailContainer.classList.remove('hidden');
+        previewBtnText.textContent = "Watch Video Preview";
+      }
+    }
+
+    thumbnailContainer.addEventListener('click', togglePreview);
+    previewToggleBtn.addEventListener('click', togglePreview);
+
+    // Direct Instant Download Function (Triggers Browser File Save)
     function triggerDirectDownload(cdnUrl, filename) {
       showStatus("Starting direct download to your device...", "success");
       const downloadEndpoint = `${BACKEND_API_BASE}/api/stream?media_url=${encodeURIComponent(cdnUrl)}&filename=${encodeURIComponent(filename)}`;
       
-      // Invisible anchor click triggers direct native download prompt
       const link = document.createElement('a');
       link.href = downloadEndpoint;
       link.setAttribute('download', filename);
@@ -250,8 +301,15 @@
       submitBtn.disabled = true;
       submitBtn.classList.add('opacity-70');
       submitBtn.innerHTML = `<i class="ph ph-spinner-gap animate-spin text-lg"></i> <span>Extracting...</span>`;
-      showStatus("Fetching video qualities from Instagram...", "info");
+      showStatus("Fetching reel stream and preview...", "info");
       resultCard.classList.add('hidden');
+
+      // Reset Player state
+      videoPlayer.pause();
+      videoPlayer.src = "";
+      videoPlayer.classList.add('hidden');
+      thumbnailContainer.classList.remove('hidden');
+      previewBtnText.textContent = "Watch Video Preview";
 
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 45000);
@@ -265,6 +323,9 @@
         if (!res.ok || (!data.download_url && (!data.qualities || data.qualities.length === 0))) {
           throw new Error(data.detail || "Unable to extract reel. Ensure it is public.");
         }
+
+        // Set video URL for in-app preview
+        currentVideoUrl = data.download_url || (data.qualities && data.qualities[0].download_url);
 
         // Populate card details
         resultThumb.src = data.thumbnail || "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400";
@@ -307,7 +368,7 @@
         });
 
         resultCard.classList.remove('hidden');
-        showStatus("Reel ready! Click a quality option below to download.", "success");
+        showStatus("Reel loaded! Click thumbnail or 'Watch Video Preview' to play.", "success");
 
       } catch (err) {
         showStatus(err.message || "Network error. Please try again.", "error");
