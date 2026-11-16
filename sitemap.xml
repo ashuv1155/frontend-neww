@@ -2,59 +2,186 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Core Downloader Tool -->
   <url>
     <loc>https://saveamedia.com/</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
   </url>
-
-  <!-- Google AdSense Trust & Legal Pages -->
+  <url>
+    <loc>https://saveamedia.com/pt/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://saveamedia.com/es/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://saveamedia.com/hi/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://saveamedia.com/id/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://saveamedia.com/tr/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://saveamedia.com/ja/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://saveamedia.com/ko/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://saveamedia.com/ar/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saveamedia.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://saveamedia.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saveamedia.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://saveamedia.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://saveamedia.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://saveamedia.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://saveamedia.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://saveamedia.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://saveamedia.com/ar/"/>
+  </url>
   <url>
     <loc>https://saveamedia.com/about</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://saveamedia.com/contact</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://saveamedia.com/privacy-policy</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://saveamedia.com/terms</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://saveamedia.com/cookie-policy</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://saveamedia.com/dmca</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://saveamedia.com/disclaimer</loc>
     <lastmod>2026-11-17</lastmod>

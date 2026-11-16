@@ -1,3 +1,14 @@
+# Language subfolder rewrites
+/en/* /en/index.html 200
+/pt/* /pt/index.html 200
+/es/* /es/index.html 200
+/hi/* /hi/index.html 200
+/id/* /id/index.html 200
+/tr/* /tr/index.html 200
+/ja/* /ja/index.html 200
+/ko/* /ko/index.html 200
+/ar/* /ar/index.html 200
+
 # Static Legal & Compliance Pages (Google AdSense)
 /privacy-policy /privacy-policy.html 200
 /terms /terms.html 200
@@ -19,5 +30,5 @@
 /save-instagram-reels / 301
 /download-instagram-reels / 301
 
-# SPA Fallback
+# SPA Root Fallback
 /* /index.html 200

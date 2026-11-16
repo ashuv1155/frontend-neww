@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "تحميل ريلز انستقرام – مجاني بجودة 1080p بدون علامة مائية | SaveAMedia",
+    "description": "تحميل ريلز وفيديوهات وقصص انستقرام بجودة 1080p Full HD مجاناً — بدون علامة مائية، وبدون تسجيل دخول. الصق الرابط واحفظ MP4 أو MP3 مباشرة.",
+    "keywords": "instagram reel downloader, download instagram reels, instagram video downloader online free, ig reel saver, save instagram reels without watermark, instagram reels download 1080p hd, instagram story downloader, instagram mp3 audio downloader, save instagram reel to camera roll iphone"
+  },
+  "nav": {
+    "downloader": "أداة التحميل",
+    "how_it_works": "كيف يعمل",
+    "features": "المميزات",
+    "compare": "Compare",
+    "faq": "الأسئلة الشائعة",
+    "bookmarklet": "Bookmarklet",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Fast 1080p Full HD Instagram Reel & Video Downloader",
+    "badge_tag": "Direct Save",
+    "title_prefix": "تحميل ريلز وفيديوهات",
+    "title_accent": "انستقرام مجاناً",
+    "subtitle": "حمّل مقاطع ريلز انستقرام والفيديوهات بجودة 1080p HD مجاناً بدون علامة مائية وبدون تسجيل دخول.",
+    "sub_desc": "Paste any public Instagram URL to watch a live preview and save 1080p Full HD MP4 files or MP3 audio directly to iPhone, Android, Mac or Windows PC — zero redirects, zero ads.",
+    "input_placeholder": "الصق رابط ريلز انستقرام هنا...",
+    "download_btn": "تحميل الريلز",
+    "paste_btn": "لصق",
+    "clear_btn": "مسح",
+    "trust_bar": "100% مجاني • تحميل غير محدود • بدون تسجيل دخول • بدون علامة مائية",
+    "trust_sub": "🔒 Strips ?igsh= Tracking • ⚡ 1080p MP4 • 🎵 MP3 Audio • 📱 All Devices"
+  },
+  "tabs": {
+    "reels": "🎬 Reels",
+    "video": "📹 Video MP4",
+    "stories": "⏱️ Stories",
+    "photo": "🖼️ HD Photo",
+    "carousel": "🗂️ Carousel",
+    "audio": "🎵 Audio MP3"
+  },
+  "how_it_works": {
+    "badge": "Simple 3-Step Workflow",
+    "title": "How to Download Instagram Reels & Videos in HD",
+    "desc": "Save any public Instagram Reel, Video, Story, or Photo to iPhone Camera Roll, Android Gallery, Mac, or Windows PC in under 30 seconds — no app required.",
+    "step1_title": "Copy the Instagram URL",
+    "step1_desc": "Open the Instagram app or website, locate the public Reel, Video, Story, or Photo post, tap the Share icon, and tap Copy Link.",
+    "step2_title": "Paste & Clean Tracking Tags",
+    "step2_desc": "Paste the URL into SaveAMedia above. Our client-side sanitizer strips ?igsh= tracking IDs automatically before fetching.",
+    "step3_title": "Watch Preview & Save MP4",
+    "step3_desc": "Verify video and sound in the built-in HTML5 player, then click 1080p HD MP4 or MP3 Audio for an instant direct download."
+  },
+  "features": {
+    "badge": "Engineered for Speed & Privacy",
+    "title": "Why Creators Prefer SaveAMedia",
+    "f1_title": "1080p HD Instagram Reel Downloader",
+    "f1_desc": "Downloads original progressive H.264 MP4 up to 1080×1920 Full HD — the same uncompressed master file Instagram stores. No quality loss, no re-encoding.",
+    "f2_title": "Direct Save — No Redirect, No Popups",
+    "f2_desc": "Saves MP4 files directly to your Downloads folder or iPhone Camera Roll using secure stream headers. No shady popup tabs, no fake download buttons.",
+    "f3_title": "Live In-Browser Video Preview",
+    "f3_desc": "Before saving, preview the full Instagram Reel or video inside a native HTML5 player right in your browser. Confirm audio sync, quality, and content.",
+    "f4_title": "Instagram to MP3 Audio Extractor",
+    "f4_desc": "Extract the audio track from any Instagram Reel or Video as a standalone MP3 file. Perfect for saving trending music, speeches, and sound bites.",
+    "f5_title": "No Watermark, No Login Required",
+    "f5_desc": "SaveAMedia never adds watermarks or branding to your files and never asks for your Instagram password. Download Instagram Reels safely and privately.",
+    "f6_title": "Works on iPhone, Android, Mac & PC",
+    "f6_desc": "Fully optimised for iPhone Safari (iOS 13+), Android Chrome, Samsung Internet, Mozilla Firefox, Microsoft Edge, and macOS — zero software install required."
+  },
+  "comparison": {
+    "badge": "Benchmark Comparison",
+    "title": "SaveAMedia vs. Screen Recording & Generic Downloaders",
+    "col_feature": "Capability",
+    "col_ours": "SaveAMedia",
+    "col_screen": "Screen Recording",
+    "col_others": "Other Sites / Apps",
+    "r1_feature": "Original 1080p Full HD",
+    "r1_ours": "✓ Uncompressed MP4",
+    "r1_screen": "✗ Lossy viewport grab",
+    "r1_others": "Often capped at 720p",
+    "r2_feature": "Zero UI Icons / Watermarks",
+    "r2_ours": "✓ 100% Clean Video",
+    "r2_screen": "✗ Captures buttons & battery",
+    "r2_others": "Varies / Watermarked",
+    "r3_feature": "Direct Zero-Redirect Save",
+    "r3_ours": "✓ Instant Stream Attachment",
+    "r3_screen": "Manual trimming needed",
+    "r3_others": "✗ Popup ad redirects",
+    "r4_feature": "No Account Login Needed",
+    "r4_ours": "✓ Zero Credentials",
+    "r4_screen": "✓ Yes",
+    "r4_others": "Mobile apps require login"
+  },
+  "device_guide": {
+    "badge": "Device Guide",
+    "title": "How to Download Instagram Reels on Any Device",
+    "desc": "Step-by-step guide for iPhone, Android, Windows PC, and Mac",
+    "ios_title": "Download Instagram Reels on iPhone (iOS)",
+    "ios_steps": [
+      "Open Instagram, find the public Reel, tap Share → Copy Link.",
+      "Open SaveAMedia in Safari (not Chrome).",
+      "Paste the link and tap Download Reel.",
+      "Tap the blue download circle in Safari's address bar.",
+      "Open Files → Downloads, tap the video, then Share → Save Video.",
+      "The Reel is now in your iPhone Camera Roll (Photos app)."
+    ],
+    "android_title": "Download Instagram Reels on Android",
+    "android_steps": [
+      "Open Instagram, find the public Reel, tap Share → Copy Link.",
+      "Open SaveAMedia in Google Chrome.",
+      "Paste the link and tap Download Reel.",
+      "Tap the primary download button for 1080p HD MP4.",
+      "The file saves automatically to your Downloads folder.",
+      "Open Google Photos or Gallery to find the saved Reel."
+    ],
+    "pc_title": "Download Instagram Reels on Windows PC",
+    "pc_steps": [
+      "Open Instagram.com in a browser and find the Reel.",
+      "Click the three dots (⋮) and select Copy link.",
+      "Open SaveAMedia in Chrome, Edge, or Firefox.",
+      "Paste the link and click Download Reel.",
+      "Click Download 1080p HD MP4 and save to your PC.",
+      "Find the file in File Explorer → Downloads."
+    ],
+    "mac_title": "Download Instagram Reels on Mac",
+    "mac_steps": [
+      "Open Instagram.com in Safari or Chrome on your Mac.",
+      "Click the three dots (⋮) on the Reel and select Copy link.",
+      "Open SaveAMedia in your browser.",
+      "Paste the link and click Download Reel.",
+      "Click Download 1080p HD MP4 to save the file.",
+      "Find the MP4 file in Finder → Downloads."
+    ]
+  },
+  "faq": {
+    "badge": "Knowledge Base",
+    "title": "Frequently Asked Questions About Downloading Instagram Reels",
+    "desc": "Common questions about SaveAMedia, Instagram Reel downloading, video quality, iOS/Android saving, and copyright.",
+    "items": [
+      {
+        "q": "How do I download Instagram Reels in 1080p Full HD?",
+        "a": "Open the Instagram app or website, tap the Share icon on your chosen public Reel or video, and copy the link. Paste the URL into the SaveAMedia input box above and tap Download. Verify the video in our live preview player and choose Download HD 1080p MP4 to save the crystal-clear file directly to your device."
+      },
+      {
+        "q": "Are Instagram Reel & Video downloads completely free and unlimited?",
+        "a": "Yes! SaveAMedia is 100% free with unlimited downloads, zero daily caps, no registration walls, and zero login requirements. We never ask for your Instagram password or account details."
+      },
+      {
+        "q": "Does SaveAMedia add watermarks or logos to downloaded videos?",
+        "a": "No. SaveAMedia streams the original master MP4 video directly from Instagram's content delivery networks. We never inject watermarks, logos, or extra compression overlays."
+      },
+      {
+        "q": "How do I save downloaded Reels to my iPhone Camera Roll?",
+        "a": "In Apple Safari (iOS 13+), tap the Download MP4 button. Tap the blue download circle in Safari's address bar, open the video in Files → Downloads, tap Share, and tap Save Video to move it directly into your Photos app (Camera Roll)."
+      },
+      {
+        "q": "Where are downloaded Instagram videos saved on Android, Mac & PC?",
+        "a": "Files save directly into your device's default Downloads folder in standard .mp4 format. On Android, downloaded videos appear immediately inside Google Photos or Samsung Gallery. On PC or Mac, you can access them via File Explorer or Finder."
+      },
+      {
+        "q": "Can I convert or download only the audio (MP3) from an Instagram Reel?",
+        "a": "Yes! SaveAMedia isolates the audio stream from the video container and provides a dedicated Download Audio (MP3) option. This is ideal for extracting viral music tracks, speech bites, and trending background scores."
+      },
+      {
+        "q": "Can I download private Instagram videos or Close Friends stories?",
+        "a": "No. SaveAMedia strictly complies with creator privacy and copyright standards. Only publicly accessible Instagram Reels, videos, posts, and stories can be parsed. Content from private accounts is protected by Instagram session tokens."
+      },
+      {
+        "q": "Why is my downloaded Reel missing sound or audio?",
+        "a": "Ensure your device volume or media player is not muted. If the audio is still silent, the creator may have used a licensed commercial music track that Instagram mutes when viewed outside its official app in specific countries. For original creator audio, SaveAMedia delivers the complete audio track."
+      },
+      {
+        "q": "Why did my Instagram Reel link fail or show 'Media Unavailable'?",
+        "a": "Extraction failures usually happen if: (1) The account is set to private; (2) The Reel was deleted or archived by the author; (3) The link copied was incomplete; or (4) Instagram public servers are momentarily rate-limiting requests. Test opening the link in a private/incognito tab to ensure it is publicly visible, then retry."
+      },
+      {
+        "q": "Is it legal and safe to download Instagram Reels?",
+        "a": "Yes. Downloading public media for personal offline viewing or archiving is permitted under Fair Use. However, re-uploading, republishing, or commercially exploiting someone else's content without creator permission violates copyright law. SaveAMedia is completely safe: we do not host copies of videos or log personal browsing data."
+      }
+    ]
+  },
+  "banner": {
+    "text": "يبدو أنك تفضل اللغة العربية. هل تود الانتقال إلى النسخة العربية؟",
+    "switch_btn": "التحويل إلى العربية",
+    "dismiss_btn": "البقاء بالإنجليزية"
+  }
+}
