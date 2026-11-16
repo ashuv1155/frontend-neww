@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Common AI crawlers — allow for GEO indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+Sitemap: https://saveamedia.com/sitemap.xml
