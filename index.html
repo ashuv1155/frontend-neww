@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InstaReelSaver - Fast Instagram Reel & Video Downloader</title>
-  <meta name="description" content="Download Instagram Reels and Videos in HD for free. Fast, secure, and unlimited.">
+  <title>InstaSave - Fast Instagram Reel Downloader</title>
+  <meta name="description" content="Download Instagram Reels and Videos in multiple qualities without redirects.">
   
   <!-- Modern Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -48,7 +48,7 @@
         <a href="#features" class="hover:text-white transition">Features</a>
         <a href="#faq" class="hover:text-white transition">FAQ</a>
         <span class="hidden sm:inline-block px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-          Fast CDN Stream
+          Direct Device Save
         </span>
       </nav>
     </div>
@@ -59,13 +59,13 @@
     
     <div class="text-center max-w-2xl mx-auto mb-10">
       <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-pink-500/10 text-pink-400 border border-pink-500/20 mb-4">
-        <i class="ph ph-lightning"></i> 100% Free & Unlimited
+        <i class="ph ph-lightning"></i> Instant Direct Download (No Redirects)
       </span>
       <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
-        Download <span class="insta-text-gradient">Instagram Reels</span> in High Quality
+        Download <span class="insta-text-gradient">Instagram Reels</span> Quality Wise
       </h1>
       <p class="text-slate-400 text-sm sm:text-base">
-        Paste reel link, extract direct high-speed CDN video stream, and save directly to your device without quality loss.
+        Paste reel link, choose your quality, and download straight to your phone or computer with 1 click.
       </p>
     </div>
 
@@ -94,18 +94,18 @@
           type="submit" 
           id="submitBtn"
           class="insta-gradient hover:opacity-95 text-white font-semibold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-pink-500/20 transition transform active:scale-[0.98]">
-          <i class="ph ph-download-simple text-base"></i>
-          <span>Get Video</span>
+          <i class="ph ph-magnifying-glass text-base"></i>
+          <span>Search</span>
         </button>
       </form>
 
-      <!-- Status / Loader Notification -->
+      <!-- Status Notification -->
       <div id="statusMessage" class="hidden mt-3 text-xs text-center font-medium py-2 rounded-lg"></div>
     </div>
 
     <!-- Result Display Card -->
     <div id="resultCard" class="hidden w-full max-w-2xl mt-8 bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-2xl backdrop-blur-xl transition-all">
-      <div class="flex flex-col sm:flex-row gap-5 items-center">
+      <div class="flex flex-col sm:flex-row gap-5 items-start">
         <!-- Thumbnail Preview -->
         <div class="w-full sm:w-44 h-48 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex-shrink-0 relative group">
           <img id="resultThumb" src="" alt="Thumbnail" class="w-full h-full object-cover">
@@ -114,34 +114,26 @@
           </div>
         </div>
 
-        <!-- Video Info & Direct Download -->
-        <div class="flex-1 flex flex-col justify-between w-full h-full space-y-4">
+        <!-- Video Info & Quality Wise Buttons -->
+        <div class="flex-1 w-full space-y-3">
           <div>
-            <div class="flex items-center gap-2 mb-1.5">
+            <div class="flex items-center gap-2 mb-1">
               <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
-                <i class="ph ph-check-circle"></i> Ready to Download
+                <i class="ph ph-check-circle"></i> Ready
               </span>
               <span id="resultAuthor" class="text-[11px] text-slate-400"></span>
             </div>
             <h3 id="resultTitle" class="text-sm font-semibold text-slate-200 line-clamp-2 leading-relaxed"></h3>
           </div>
 
-          <div class="flex flex-col sm:flex-row gap-2.5 pt-2">
-            <a 
-              id="directDownloadBtn" 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex-1 py-3 px-4 insta-gradient hover:opacity-95 text-white font-semibold rounded-xl text-xs sm:text-sm text-center flex items-center justify-center gap-2 shadow-md">
-              <i class="ph ph-arrow-circle-down text-lg"></i>
-              <span>Download MP4</span>
-            </a>
-            <button 
-              id="copyLinkBtn" 
-              class="py-3 px-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-xs sm:text-sm text-center flex items-center justify-center gap-1.5 border border-slate-700/80 transition">
-              <i class="ph ph-copy"></i>
-              <span>Copy Link</span>
-            </button>
+          <div class="pt-1">
+            <div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-1">
+              <i class="ph ph-sliders"></i> Choose Download Quality:
+            </div>
+            <!-- Dynamic Quality Buttons Container -->
+            <div id="qualityButtonsContainer" class="flex flex-col gap-2">
+              <!-- Rendered via JS -->
+            </div>
           </div>
         </div>
       </div>
@@ -151,24 +143,24 @@
     <div id="features" class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-4xl mt-16 pt-8 border-t border-slate-900">
       <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
         <div class="w-8 h-8 rounded-lg bg-pink-500/10 flex items-center justify-center text-pink-400 mb-3 text-lg">
-          <i class="ph ph-lightning"></i>
+          <i class="ph ph-download-simple"></i>
         </div>
-        <h4 class="font-bold text-sm mb-1">Direct CDN Link</h4>
-        <p class="text-xs text-slate-400">Zero proxy delay. Your browser downloads straight from Instagram's content delivery network.</p>
+        <h4 class="font-bold text-sm mb-1">Direct Save</h4>
+        <p class="text-xs text-slate-400">Downloads directly as MP4 file to your device without opening new tabs or player screens.</p>
       </div>
       <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
         <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-3 text-lg">
-          <i class="ph ph-shield-check"></i>
+          <i class="ph ph-sliders"></i>
         </div>
-        <h4 class="font-bold text-sm mb-1">No Login Required</h4>
-        <p class="text-xs text-slate-400">No account credentials needed. Download public reels safely with full anonymity.</p>
+        <h4 class="font-bold text-sm mb-1">Multiple Resolutions</h4>
+        <p class="text-xs text-slate-400">Choose between HD 1080p for highest quality or SD for fast low-data mobile downloads.</p>
       </div>
       <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
-        <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 mb-3 text-lg">
-          <i class="ph ph-devices"></i>
+        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-3 text-lg">
+          <i class="ph ph-shield-check"></i>
         </div>
-        <h4 class="font-bold text-sm mb-1">Mobile & Desktop</h4>
-        <p class="text-xs text-slate-400">Works seamlessly across iOS Safari, Android Chrome, and modern desktop browsers.</p>
+        <h4 class="font-bold text-sm mb-1">100% Free & Safe</h4>
+        <p class="text-xs text-slate-400">No registration, no watermark, and no data tracking.</p>
       </div>
     </div>
 
@@ -176,15 +168,9 @@
     <div id="faq" class="w-full max-w-3xl mt-14 space-y-3">
       <h3 class="text-lg font-bold text-slate-200 mb-4">Frequently Asked Questions</h3>
       <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
-        <h5 class="text-xs font-semibold text-pink-400 mb-1">How can this handle millions of visits for free?</h5>
+        <h5 class="text-xs font-semibold text-pink-400 mb-1">Why does it download directly now?</h5>
         <p class="text-xs text-slate-400 leading-relaxed">
-          The video files (gigabytes of bandwidth) are streamed <strong>directly between Instagram CDN and the user</strong>. The backend only resolves metadata (a few kilobytes of JSON), keeping server resource usage near zero.
-        </p>
-      </div>
-      <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
-        <h5 class="text-xs font-semibold text-pink-400 mb-1">Can I download private reels?</h5>
-        <p class="text-xs text-slate-400 leading-relaxed">
-          No, the downloader only supports publicly available Instagram reels and videos in adherence to platform privacy standards.
+          The backend now streams the video with direct file headers (<code class="text-slate-300">Content-Disposition: attachment</code>), instructing your browser to save the video immediately into your Downloads folder without opening in a new tab.
         </p>
       </div>
     </div>
@@ -200,8 +186,7 @@
 
   <!-- Script Configuration & Logic -->
   <script>
-    // Live Render backend URL
-    const BACKEND_API_BASE = "https://backend-5gnm.onrender.com"; 
+    const BACKEND_API_BASE = "https://backend-5gnm.onrender.com";
 
     const form = document.getElementById('downloadForm');
     const urlInput = document.getElementById('urlInput');
@@ -212,10 +197,8 @@
     const resultThumb = document.getElementById('resultThumb');
     const resultTitle = document.getElementById('resultTitle');
     const resultAuthor = document.getElementById('resultAuthor');
-    const directDownloadBtn = document.getElementById('directDownloadBtn');
-    const copyLinkBtn = document.getElementById('copyLinkBtn');
+    const qualityButtonsContainer = document.getElementById('qualityButtonsContainer');
 
-    // Clipboard paste helper
     pasteBtn.addEventListener('click', async () => {
       try {
         const text = await navigator.clipboard.readText();
@@ -240,25 +223,36 @@
       statusMessage.textContent = msg;
     }
 
+    // Direct Instant Download Function (No Redirection, Triggers Browser File Save)
+    function triggerDirectDownload(cdnUrl, filename) {
+      showStatus("Starting direct download to your device...", "success");
+      const downloadEndpoint = `${BACKEND_API_BASE}/api/stream?media_url=${encodeURIComponent(cdnUrl)}&filename=${encodeURIComponent(filename)}`;
+      
+      // Invisible anchor click triggers direct native download prompt
+      const link = document.createElement('a');
+      link.href = downloadEndpoint;
+      link.setAttribute('download', filename);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const inputUrl = urlInput.value.trim();
       if (!inputUrl) return;
 
-      // Validate URL format
       if (!inputUrl.includes("instagram.com")) {
-        showStatus("Please enter a valid Instagram link (e.g. instagram.com/reel/...).", "error");
+        showStatus("Please enter a valid Instagram reel link.", "error");
         return;
       }
 
-      // UI Loading state
       submitBtn.disabled = true;
       submitBtn.classList.add('opacity-70');
       submitBtn.innerHTML = `<i class="ph ph-spinner-gap animate-spin text-lg"></i> <span>Extracting...</span>`;
-      showStatus("Connecting to stream extractor (if server was sleeping, please wait a few seconds)...", "info");
+      showStatus("Fetching video qualities from Instagram...", "info");
       resultCard.classList.add('hidden');
 
-      // 45s AbortController timeout to gracefully handle Render cold boot delays
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 45000);
 
@@ -268,33 +262,59 @@
         clearTimeout(timeoutId);
         const data = await res.json();
 
-        if (!res.ok || !data.download_url) {
-          throw new Error(data.detail || "Unable to extract reel link. Ensure reel is public.");
+        if (!res.ok || (!data.download_url && (!data.qualities || data.qualities.length === 0))) {
+          throw new Error(data.detail || "Unable to extract reel. Ensure it is public.");
         }
 
-        // Render Result
+        // Populate card details
         resultThumb.src = data.thumbnail || "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400";
-        resultTitle.textContent = data.title || "Instagram Video Stream";
+        resultTitle.textContent = data.title || "Instagram Video";
         if (resultAuthor && data.uploader) {
           resultAuthor.textContent = `• @${data.uploader}`;
         }
-        directDownloadBtn.href = data.download_url;
 
-        // Copy download URL button
-        copyLinkBtn.onclick = () => {
-          navigator.clipboard.writeText(data.download_url);
-          showStatus("Direct CDN download link copied to clipboard!", "success");
-        };
+        // Build Quality Buttons
+        qualityButtonsContainer.innerHTML = "";
+        const qualities = data.qualities && data.qualities.length > 0 
+          ? data.qualities 
+          : [{ label: "Download HD MP4 (Best Quality)", download_url: data.download_url, quality: "hd" }];
+
+        const baseFileName = `instagram_${data.shortcode || 'reel'}.mp4`;
+
+        qualities.forEach((item, index) => {
+          const btn = document.createElement('button');
+          btn.type = "button";
+          const isPrimary = index === 0;
+          btn.className = isPrimary
+            ? "w-full py-3 px-4 insta-gradient hover:opacity-95 text-white font-semibold rounded-xl text-xs sm:text-sm flex items-center justify-between shadow-md transition transform active:scale-[0.99]"
+            : "w-full py-2.5 px-4 bg-slate-800/90 hover:bg-slate-700 text-slate-200 font-medium rounded-xl text-xs sm:text-sm flex items-center justify-between border border-slate-700 transition";
+
+          btn.innerHTML = `
+            <span class="flex items-center gap-2">
+              <i class="ph ${isPrimary ? 'ph-sparkle' : 'ph-video'} text-base"></i>
+              <span>${item.label}</span>
+            </span>
+            <span class="inline-flex items-center gap-1 text-[11px] bg-black/20 px-2 py-0.5 rounded">
+              <i class="ph ph-arrow-down"></i> Save MP4
+            </span>
+          `;
+
+          btn.addEventListener('click', () => {
+            triggerDirectDownload(item.download_url, baseFileName);
+          });
+
+          qualityButtonsContainer.appendChild(btn);
+        });
 
         resultCard.classList.remove('hidden');
-        showStatus("Reel extracted successfully!", "success");
+        showStatus("Reel ready! Click a quality option below to download.", "success");
 
       } catch (err) {
         showStatus(err.message || "Network error. Please try again.", "error");
       } finally {
         submitBtn.disabled = false;
         submitBtn.classList.remove('opacity-70');
-        submitBtn.innerHTML = `<i class="ph ph-download-simple text-base"></i> <span>Get Video</span>`;
+        submitBtn.innerHTML = `<i class="ph ph-magnifying-glass text-base"></i> <span>Search</span>`;
       }
     });
   </script>
