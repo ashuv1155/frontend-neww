@@ -1,11 +1,23 @@
-/instagram-reel-downloader /  301
-/reel-downloader /  301
-/ig-downloader /  301
-/instagram-video-downloader /  301
-/instagram-story-downloader /  301
-/instagram-photo-downloader /  301
-/instagram-mp3-downloader /  301
-/insta-downloader /  301
-/save-instagram-reels /  301
-/download-instagram-reels /  301
+# Static Legal & Compliance Pages (Google AdSense)
+/privacy-policy /privacy-policy.html 200
+/terms /terms.html 200
+/about /about.html 200
+/contact /contact.html 200
+/dmca /dmca.html 200
+/disclaimer /disclaimer.html 200
+/cookie-policy /cookie-policy.html 200
+
+# SEO Keyword Aliases (301 Permanent Redirect to Home)
+/instagram-reel-downloader / 301
+/reel-downloader / 301
+/ig-downloader / 301
+/instagram-video-downloader / 301
+/instagram-story-downloader / 301
+/instagram-photo-downloader / 301
+/instagram-mp3-downloader / 301
+/insta-downloader / 301
+/save-instagram-reels / 301
+/download-instagram-reels / 301
+
+# SPA Fallback
 /* /index.html 200
