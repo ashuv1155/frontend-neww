@@ -1,183 +1,153 @@
 {
   "meta": {
-    "title": "Download Reels Instagram – Gratis 1080p HD Tanpa Watermark | SaveAMedia",
-    "description": "Download Reels, Video, Story & Foto Instagram kualitas 1080p HD gratis tanpa watermark dan tanpa login. Tempel tautan dan simpan MP4 atau MP3 langsung ke galeri HP.",
-    "keywords": "instagram reel downloader, download instagram reels, instagram video downloader online free, ig reel saver, save instagram reels without watermark, instagram reels download 1080p hd, instagram story downloader, instagram mp3 audio downloader, save instagram reel to camera roll iphone"
+    "title": "Download Reels IG – Gratis Kualitas 1080p HD Tanpa Watermark",
+    "description": "Download video Reels, Story, dan Foto Instagram kualitas Full HD 1080p gratis tanpa watermark & tanpa login. Simpan video IG langsung ke galeri HP kamu!",
+    "keywords": "download reels ig, download video instagram, simpan reels ig tanpa watermark, download reels instagram hd 1080p, cara download reels ig ke galeri, download video ig tanpa aplikasi"
   },
   "nav": {
-    "downloader": "Downloader",
-    "how_it_works": "How It Works",
-    "features": "Features",
-    "compare": "Compare",
-    "faq": "FAQ",
+    "downloader": "Pengunduh",
+    "how_it_works": "Cara Pakai",
+    "features": "Fitur",
+    "compare": "Perbandingan",
+    "faq": "Tanya Jawab",
     "bookmarklet": "Bookmarklet",
-    "about": "About",
-    "contact": "Contact"
+    "about": "Tentang Kami",
+    "contact": "Kontak"
   },
   "hero": {
-    "badge": "Fast 1080p Full HD Instagram Reel & Video Downloader",
-    "badge_tag": "Direct Save",
-    "title_prefix": "Download Reels & Video",
+    "badge": "Pengunduh Video & Reels Instagram 1080p Full HD",
+    "badge_tag": "Simpan Langsung",
+    "title_prefix": "Download Video & Reels",
     "title_accent": "Instagram Gratis",
-    "subtitle": "Download Instagram Reels, Videos, Stories & Photos in 1080p HD — free, no watermark, no login.",
-    "sub_desc": "Paste any public Instagram URL to watch a live preview and save 1080p Full HD MP4 files or MP3 audio directly to iPhone, Android, Mac or Windows PC — zero redirects, zero ads.",
-    "input_placeholder": "Tempel tautan Reels Instagram di sini...",
+    "subtitle": "Simpan Reels IG kualitas 1080p Full HD tanpa watermark, tanpa aplikasi tambahan, dan tanpa login.",
+    "sub_desc": "Tempel tautan Reels publik Instagram apa saja untuk melihat pratinjau langsung dan menyimpan file video MP4 atau audio MP3 ke HP Android, iPhone, atau laptop.",
+    "input_placeholder": "Tempel tautan Reels IG di sini (contoh: https://www.instagram.com/reel/...)",
     "download_btn": "Download Reel",
     "paste_btn": "Tempel",
     "clear_btn": "Hapus",
-    "trust_bar": "100% Free • Unlimited Downloads • No Login Required • No Watermark • iOS & Android",
-    "trust_sub": "🔒 Strips ?igsh= Tracking • ⚡ 1080p MP4 • 🎵 MP3 Audio • 📱 All Devices"
+    "trust_bar": "100% Gratis • Tanpa Batas Kuota • Tanpa Login • Tanpa Watermark • Android & iOS",
+    "trust_sub": "🔒 Hapus pelacak ?igsh= • ⚡ MP4 1080p • 🎵 Audio MP3 • 📱 Semua Perangkat"
   },
   "tabs": {
     "reels": "🎬 Reels",
     "video": "📹 Video MP4",
-    "stories": "⏱️ Stories",
-    "photo": "🖼️ HD Photo",
+    "stories": "⏱️ Story",
+    "photo": "🖼️ Foto HD",
     "carousel": "🗂️ Carousel",
     "audio": "🎵 Audio MP3"
   },
   "how_it_works": {
-    "badge": "Simple 3-Step Workflow",
-    "title": "How to Download Instagram Reels & Videos in HD",
-    "desc": "Save any public Instagram Reel, Video, Story, or Photo to iPhone Camera Roll, Android Gallery, Mac, or Windows PC in under 30 seconds — no app required.",
-    "step1_title": "Copy the Instagram URL",
-    "step1_desc": "Open the Instagram app or website, locate the public Reel, Video, Story, or Photo post, tap the Share icon, and tap Copy Link.",
-    "step2_title": "Paste & Clean Tracking Tags",
-    "step2_desc": "Paste the URL into SaveAMedia above. Our client-side sanitizer strips ?igsh= tracking IDs automatically before fetching.",
-    "step3_title": "Watch Preview & Save MP4",
-    "step3_desc": "Verify video and sound in the built-in HTML5 player, then click 1080p HD MP4 or MP3 Audio for an instant direct download."
+    "badge": "Langkah Mudah",
+    "title": "Cara Download Reels Instagram dalam 3 Langkah",
+    "desc": "Simpan video Reels, Story, atau Foto Instagram ke galeri HP Android atau iPhone dalam waktu kurang dari 30 detik.",
+    "step1_title": "Salin Tautan Instagram",
+    "step1_desc": "Buka aplikasi Instagram, pilih Reel yang ingin kamu simpan, klik tombol Bagikan lalu pilih 'Salin Tautan'.",
+    "step2_title": "Tempel Tautan di SaveAMedia",
+    "step2_desc": "Buka web SaveAMedia, tempel link tautan ke dalam kolom di atas, lalu klik tombol 'Download Reel'.",
+    "step3_title": "Tonton Pratinjau & Simpan",
+    "step3_desc": "Tonton preview video di pemutar bawaan, lalu pilih kualitas '1080p HD MP4' untuk menyimpan langsung ke galeri HP."
   },
   "features": {
-    "badge": "Engineered for Speed & Privacy",
-    "title": "Why Creators Prefer SaveAMedia",
-    "f1_title": "1080p HD Instagram Reel Downloader",
-    "f1_desc": "Downloads original progressive H.264 MP4 up to 1080×1920 Full HD — the same uncompressed master file Instagram stores. No quality loss, no re-encoding.",
-    "f2_title": "Direct Save — No Redirect, No Popups",
-    "f2_desc": "Saves MP4 files directly to your Downloads folder or iPhone Camera Roll using secure stream headers. No shady popup tabs, no fake download buttons.",
-    "f3_title": "Live In-Browser Video Preview",
-    "f3_desc": "Before saving, preview the full Instagram Reel or video inside a native HTML5 player right in your browser. Confirm audio sync, quality, and content.",
-    "f4_title": "Instagram to MP3 Audio Extractor",
-    "f4_desc": "Extract the audio track from any Instagram Reel or Video as a standalone MP3 file. Perfect for saving trending music, speeches, and sound bites.",
-    "f5_title": "No Watermark, No Login Required",
-    "f5_desc": "SaveAMedia never adds watermarks or branding to your files and never asks for your Instagram password. Download Instagram Reels safely and privately.",
-    "f6_title": "Works on iPhone, Android, Mac & PC",
-    "f6_desc": "Fully optimised for iPhone Safari (iOS 13+), Android Chrome, Samsung Internet, Mozilla Firefox, Microsoft Edge, and macOS — zero software install required."
+    "badge": "Cepat dan Privasi Terjaga",
+    "title": "Keunggulan SaveAMedia Dibandingkan yang Lain",
+    "f1_title": "Kualitas Asli 1080p Full HD",
+    "f1_desc": "Video diunduh langsung dari server Instagram dalam resolusi tertinggi tanpa penurunan kualitas atau blur.",
+    "f2_title": "Tanpa Watermark & Bersih",
+    "f2_desc": "Hasil unduhan 100% bersih tanpa logo nama akun, watermark mengganggu, atau tanda aplikasi pihak ketiga.",
+    "f3_title": "Ubah Reels ke Audio MP3",
+    "f3_desc": "Ambil musik trending atau sound viral dari video Reels favorit kamu dan simpan langsung dalam format MP3.",
+    "f4_title": "Mudah untuk Android & iPhone",
+    "f4_desc": "Bisa digunakan langsung dari browser Chrome di Android atau Safari di iOS tanpa perlu install aplikasi.",
+    "f5_title": "Tanpa Login Akun Instagram",
+    "f5_desc": "Kamu tidak perlu memasukkan username atau password akun IG sama sekali, akun kamu dijamin 100% aman.",
+    "f6_title": "Gratis & Unduhan Tanpa Batas",
+    "f6_desc": "Unduh sebanyak yang kamu mau setiap hari tanpa biaya tersembunyi atau langganan apa pun."
   },
   "comparison": {
-    "badge": "Benchmark Comparison",
-    "title": "SaveAMedia vs. Screen Recording & Generic Downloaders",
-    "col_feature": "Capability",
+    "badge": "Tabel Perbandingan",
+    "title": "SaveAMedia vs Rekam Layar & Aplikasi Lain",
+    "col_feature": "Fitur",
     "col_ours": "SaveAMedia",
-    "col_screen": "Screen Recording",
-    "col_others": "Other Sites / Apps",
-    "r1_feature": "Original 1080p Full HD",
-    "r1_ours": "✓ Uncompressed MP4",
-    "r1_screen": "✗ Lossy viewport grab",
-    "r1_others": "Often capped at 720p",
-    "r2_feature": "Zero UI Icons / Watermarks",
-    "r2_ours": "✓ 100% Clean Video",
-    "r2_screen": "✗ Captures buttons & battery",
-    "r2_others": "Varies / Watermarked",
-    "r3_feature": "Direct Zero-Redirect Save",
-    "r3_ours": "✓ Instant Stream Attachment",
-    "r3_screen": "Manual trimming needed",
-    "r3_others": "✗ Popup ad redirects",
-    "r4_feature": "No Account Login Needed",
-    "r4_ours": "✓ Zero Credentials",
-    "r4_screen": "✓ Yes",
-    "r4_others": "Mobile apps require login"
+    "col_screen": "Rekam Layar (Screen Record)",
+    "col_others": "Aplikasi Lain / Web Biasa",
+    "r1_feature": "Kualitas Video 1080p HD",
+    "r1_ours": "✓ Asli Tanpa Buram",
+    "r1_screen": "✗ Kualitas turun dan pecah",
+    "r1_others": "Sering dibatasi di 720p",
+    "r2_feature": "Bebas Watermark & Ikon",
+    "r2_ours": "✓ 100% Bersih",
+    "r2_screen": "✗ Ikut merekam tombol & baterai",
+    "r2_others": "Sering ada logo aplikasi",
+    "r3_feature": "Unduhan Tanpa Iklan Pop-up",
+    "r3_ours": "✓ Cepat & Langsung",
+    "r3_screen": "Harus potong video manual",
+    "r3_others": "✗ Iklan pop-up menjebak",
+    "r4_feature": "Keamanan & Tanpa Login",
+    "r4_ours": "✓ Tanpa Login",
+    "r4_screen": "✓ Aman",
+    "r4_others": "Kadang minta login IG"
   },
   "device_guide": {
-    "badge": "Device Guide",
-    "title": "How to Download Instagram Reels on Any Device",
-    "desc": "Step-by-step guide for iPhone, Android, Windows PC, and Mac",
-    "ios_title": "Download Instagram Reels on iPhone (iOS)",
+    "badge": "Panduan Perangkat",
+    "title": "Cara Download Video Reels di Berbagai HP",
+    "desc": "Panduan langkah demi langkah untuk pengguna iPhone, Android, dan Komputer",
+    "ios_title": "Download Reels di iPhone (iOS)",
     "ios_steps": [
-      "Open Instagram, find the public Reel, tap Share → Copy Link.",
-      "Open SaveAMedia in Safari (not Chrome).",
-      "Paste the link and tap Download Reel.",
-      "Tap the blue download circle in Safari's address bar.",
-      "Open Files → Downloads, tap the video, then Share → Save Video.",
-      "The Reel is now in your iPhone Camera Roll (Photos app)."
+      "Buka Instagram, cari Reels dan klik ikon Bagikan → Salin Tautan.",
+      "Buka browser Safari dan kunjungi SaveAMedia.",
+      "Tempel tautan lalu klik tombol Download Reel.",
+      "Klik ikon unduhan panah biru di browser Safari.",
+      "Buka File → Unduhan, pilih video lalu klik Bagikan → Simpan Video ke Foto."
     ],
-    "android_title": "Download Instagram Reels on Android",
+    "android_title": "Download Reels di Android",
     "android_steps": [
-      "Open Instagram, find the public Reel, tap Share → Copy Link.",
-      "Open SaveAMedia in Google Chrome.",
-      "Paste the link and tap Download Reel.",
-      "Tap the primary download button for 1080p HD MP4.",
-      "The file saves automatically to your Downloads folder.",
-      "Open Google Photos or Gallery to find the saved Reel."
+      "Buka aplikasi Instagram dan salin tautan video Reels.",
+      "Buka SaveAMedia di Google Chrome.",
+      "Tempel tautan dan tekan tombol Download Reel.",
+      "Pilih Download MP4 1080p HD.",
+      "Video akan otomatis tersimpan di folder Download dan muncul di Galeri."
     ],
-    "pc_title": "Download Instagram Reels on Windows PC",
+    "pc_title": "Download Reels di Laptop / PC",
     "pc_steps": [
-      "Open Instagram.com in a browser and find the Reel.",
-      "Click the three dots (⋮) and select Copy link.",
-      "Open SaveAMedia in Chrome, Edge, or Firefox.",
-      "Paste the link and click Download Reel.",
-      "Click Download 1080p HD MP4 and save to your PC.",
-      "Find the file in File Explorer → Downloads."
+      "Buka Instagram.com di browser PC dan salin tautan video.",
+      "Buka SaveAMedia di Chrome, Edge, atau Firefox.",
+      "Tempel tautan dan klik tombol Download Reel.",
+      "Pilih resolusi dan simpan video ke folder Downloads di komputer."
     ],
-    "mac_title": "Download Instagram Reels on Mac",
+    "mac_title": "Download Reels di Mac",
     "mac_steps": [
-      "Open Instagram.com in Safari or Chrome on your Mac.",
-      "Click the three dots (⋮) on the Reel and select Copy link.",
-      "Open SaveAMedia in your browser.",
-      "Paste the link and click Download Reel.",
-      "Click Download 1080p HD MP4 to save the file.",
-      "Find the MP4 file in Finder → Downloads."
+      "Buka Instagram di Safari atau Chrome di Mac dan salin link video.",
+      "Buka SaveAMedia di browser Anda.",
+      "Tempel link dan klik Download Reel.",
+      "File video MP4 akan langsung tersimpan di folder Downloads Mac Anda."
     ]
   },
   "faq": {
-    "badge": "Knowledge Base",
-    "title": "Frequently Asked Questions About Downloading Instagram Reels",
-    "desc": "Common questions about SaveAMedia, Instagram Reel downloading, video quality, iOS/Android saving, and copyright.",
+    "badge": "Pusat Bantuan",
+    "title": "Pertanyaan Umum Seputar Download Reels IG",
+    "desc": "Semua jawaban tentang SaveAMedia, kualitas video, cara simpan di HP, dan hak cipta.",
     "items": [
       {
-        "q": "How do I download Instagram Reels in 1080p Full HD?",
-        "a": "Open the Instagram app or website, tap the Share icon on your chosen public Reel or video, and copy the link. Paste the URL into the SaveAMedia input box above and tap Download. Verify the video in our live preview player and choose Download HD 1080p MP4 to save the crystal-clear file directly to your device."
+        "q": "Apakah download Reels di SaveAMedia gratis dan aman?",
+        "a": "Ya, SaveAMedia 100% gratis digunakan tanpa batas kuota harian. Layanan kami sangat aman karena tidak pernah meminta password akun Instagram ataupun mengakses data privasi kamu."
       },
       {
-        "q": "Are Instagram Reel & Video downloads completely free and unlimited?",
-        "a": "Yes! SaveAMedia is 100% free with unlimited downloads, zero daily caps, no registration walls, and zero login requirements. We never ask for your Instagram password or account details."
+        "q": "Bagaimana cara menyimpan video Reels ke galeri HP iPhone dan Android?",
+        "a": "Di Android, video akan otomatis tersimpan di folder 'Download' dan muncul di Galeri foto. Di iPhone (Safari), klik 'Download', buka file dari ikon unduhan Safari, klik 'Bagikan', lalu pilih 'Simpan Video'."
       },
       {
-        "q": "Does SaveAMedia add watermarks or logos to downloaded videos?",
-        "a": "No. SaveAMedia streams the original master MP4 video directly from Instagram's content delivery networks. We never inject watermarks, logos, or extra compression overlays."
+        "q": "Apakah video Reels yang diunduh ada watermark-nya?",
+        "a": "Tidak, video yang kamu download melalui SaveAMedia bebas dari segala bentuk watermark atau logo. Kualitasnya sama persis dengan video master yang diunggah oleh pemilik aslinya."
       },
       {
-        "q": "How do I save downloaded Reels to my iPhone Camera Roll?",
-        "a": "In Apple Safari (iOS 13+), tap the Download MP4 button. Tap the blue download circle in Safari's address bar, open the video in Files → Downloads, tap Share, and tap Save Video to move it directly into your Photos app (Camera Roll)."
-      },
-      {
-        "q": "Where are downloaded Instagram videos saved on Android, Mac & PC?",
-        "a": "Files save directly into your device's default Downloads folder in standard .mp4 format. On Android, downloaded videos appear immediately inside Google Photos or Samsung Gallery. On PC or Mac, you can access them via File Explorer or Finder."
-      },
-      {
-        "q": "Can I convert or download only the audio (MP3) from an Instagram Reel?",
-        "a": "Yes! SaveAMedia isolates the audio stream from the video container and provides a dedicated Download Audio (MP3) option. This is ideal for extracting viral music tracks, speech bites, and trending background scores."
-      },
-      {
-        "q": "Can I download private Instagram videos or Close Friends stories?",
-        "a": "No. SaveAMedia strictly complies with creator privacy and copyright standards. Only publicly accessible Instagram Reels, videos, posts, and stories can be parsed. Content from private accounts is protected by Instagram session tokens."
-      },
-      {
-        "q": "Why is my downloaded Reel missing sound or audio?",
-        "a": "Ensure your device volume or media player is not muted. If the audio is still silent, the creator may have used a licensed commercial music track that Instagram mutes when viewed outside its official app in specific countries. For original creator audio, SaveAMedia delivers the complete audio track."
-      },
-      {
-        "q": "Why did my Instagram Reel link fail or show 'Media Unavailable'?",
-        "a": "Extraction failures usually happen if: (1) The account is set to private; (2) The Reel was deleted or archived by the author; (3) The link copied was incomplete; or (4) Instagram public servers are momentarily rate-limiting requests. Test opening the link in a private/incognito tab to ensure it is publicly visible, then retry."
-      },
-      {
-        "q": "Is it legal and safe to download Instagram Reels?",
-        "a": "Yes. Downloading public media for personal offline viewing or archiving is permitted under Fair Use. However, re-uploading, republishing, or commercially exploiting someone else's content without creator permission violates copyright law. SaveAMedia is completely safe: we do not host copies of videos or log personal browsing data."
+        "q": "Apakah aman dan legal mendownload video Instagram?",
+        "a": "Mengunduh konten publik untuk ditonton secara offline atau keperluan arsip pribadi diperbolehkan (Fair Use). Namun, dilarang keras mengunggah ulang atau mengomersialkan konten milik orang lain tanpa izin resmi."
       }
     ]
   },
   "banner": {
-    "text": "Gunakan versi Bahasa Indonesia?",
+    "text": "Gunakan versi Bahasa Indonesia untuk kenyamanan Anda?",
     "switch_btn": "Ubah ke Bahasa Indonesia",
-    "dismiss_btn": "Tetap dalam Bahasa Inggris"
+    "dismiss_btn": "Tetap Bahasa Inggris"
   }
 }

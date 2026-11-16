@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Baixar Reels do Instagram – Grátis 1080p HD, Sem Marca D'água | SaveAMedia",
-    "description": "Baixe Reels, Vídeos, Stories e Fotos do Instagram em 1080p HD grátis — sem marca d'água, sem login e sem aplicativo. Cole o link e baixe MP4 ou MP3 agora.",
+    "title": "Baixar Reels do Instagram – Grátis em 1080p Sem Marca D'água",
+    "description": "Baixe Reels, vídeos e áudio do Instagram em Full HD 1080p grátis. Sem marca d'água, sem login e direto na galeria do celular. Cole o link e salve agora!",
     "keywords": "baixar reels instagram, baixar video do instagram, download reels instagram online gratis, salvar reels instagram sem marca dagua, baixar reels 1080p hd, salvar reels no iphone galeria, baixar reels android"
   },
   "nav": {
@@ -17,11 +17,11 @@
   "hero": {
     "badge": "Baixador de Reels e Vídeos do Instagram em 1080p Full HD",
     "badge_tag": "Download Direto",
-    "title_prefix": "Baixar Reels e Vídeos",
+    "title_prefix": "Baixar Vídeo e Reels",
     "title_accent": "do Instagram Grátis",
-    "subtitle": "Baixe Reels, Vídeos, Stories e Fotos do Instagram em 1080p HD — grátis, sem marca d'água e sem login.",
+    "subtitle": "Salve qualquer Reel em Full HD 1080p sem marca d'água, sem instalar app e sem login.",
     "sub_desc": "Cole qualquer link público do Instagram para assistir à prévia ao vivo e salvar arquivos MP4 em 1080p Full HD ou áudio MP3 no iPhone, Android, Mac ou PC.",
-    "input_placeholder": "Cole o link do Reel do Instagram aqui (ex: https://www.instagram.com/reel/...)",
+    "input_placeholder": "Cole o link do Reel aqui (ex: https://www.instagram.com/reel/...)",
     "download_btn": "Baixar Reel",
     "paste_btn": "Colar",
     "clear_btn": "Limpar",
@@ -38,30 +38,30 @@
   },
   "how_it_works": {
     "badge": "Passo a Passo Simples",
-    "title": "Como Baixar Reels e Vídeos do Instagram em HD",
-    "desc": "Salve qualquer Reel, Vídeo, Story ou Foto público no rolo da câmera do iPhone, galeria do Android ou PC em menos de 30 segundos — sem instalar aplicativos.",
+    "title": "Como Baixar Reels do Instagram em 3 Passos",
+    "desc": "Salve qualquer Reel, Vídeo, Story ou Foto público no rolo da câmera do iPhone, galeria do Android ou PC em menos de 30 segundos.",
     "step1_title": "Copie o Link do Instagram",
-    "step1_desc": "Abra o aplicativo ou site do Instagram, encontre o Reel ou vídeo público, toque no ícone de Compartilhar e selecione Copiar Link.",
+    "step1_desc": "Abra o Instagram, vá no Reel que deseja salvar, toque no ícone de compartilhar e selecione 'Copiar link'.",
     "step2_title": "Cole e Limpe Rastreadores",
-    "step2_desc": "Cole o link no SaveAMedia acima. Nosso sistema remove automaticamente os parâmetros de rastreamento ?igsh= antes de processar.",
+    "step2_desc": "Acesse o SaveAMedia, cole o link no campo acima e aguarde a limpeza automática de rastreadores ?igsh=.",
     "step3_title": "Veja a Prévia e Salve o MP4",
-    "step3_desc": "Verifique o vídeo e o som no player HTML5 integrado e clique em Baixar MP4 1080p ou Áudio MP3 para salvar instantaneamente."
+    "step3_desc": "Assista à prévia do vídeo e clique em 'Baixar 1080p HD' para salvar direto na galeria do seu celular ou PC."
   },
   "features": {
     "badge": "Projetado para Velocidade e Privacidade",
     "title": "Por Que os Criadores Preferem o SaveAMedia",
-    "f1_title": "Baixador de Reels em 1080p HD Real",
-    "f1_desc": "Extrai o fluxo MP4 progressivo original até 1080×1920 Full HD — exatamente o arquivo master que o Instagram armazena, sem perda de qualidade.",
-    "f2_title": "Download Direto — Sem Redirecionamentos",
-    "f2_desc": "Salva o arquivo MP4 diretamente na sua pasta de Downloads ou fotos sem janelas pop-up invasivas ou botões falsos.",
-    "f3_title": "Player de Prévia Integrado",
-    "f3_desc": "Assista ao Reel completo antes de salvar para checar o áudio e a qualidade sem gastar os dados do seu celular à toa.",
-    "f4_title": "Extração de Áudio MP3 em Um Clique",
-    "f4_desc": "Extraia apenas a música ou áudio de qualquer Reel como arquivo MP3 standalone. Excelente para salvar músicas e áudios em alta.",
+    "f1_title": "Vídeos em Full HD 1080p Real",
+    "f1_desc": "Extraímos o arquivo original direto dos servidores do Instagram com qualidade máxima, sem recompactação.",
+    "f2_title": "Zero Marca D'água ou Logos",
+    "f2_desc": "Seus vídeos são baixados 100% limpos, perfeitos para guardar lembranças ou editar seus próprios conteúdos.",
+    "f3_title": "Baixar Áudio MP3 do Reel",
+    "f3_desc": "Curtiu a música ou o áudio do Reel? Converta e baixe a faixa de áudio em MP3 com apenas um toque.",
+    "f4_title": "Compatível com iPhone e Android",
+    "f4_desc": "Funciona direto pelo navegador Safari ou Chrome, salvando no rolo da câmera do iPhone ou na galeria do Android.",
     "f5_title": "Sem Marca D'água e Sem Login",
     "f5_desc": "O SaveAMedia nunca insere marcas d'água no vídeo baixado e nunca pede sua senha ou conta do Instagram.",
-    "f6_title": "Compatível com iPhone, Android, Mac e PC",
-    "f6_desc": "Funciona com total fluidez no Safari do iOS 13+, Google Chrome no Android, Samsung Internet, Edge, Firefox e computadores Mac e Windows."
+    "f6_title": "Downloads Ilimitados",
+    "f6_desc": "Baixe quantos vídeos quiser diariamente sem taxas, sem limites e sem anúncios pop-up invasivos."
   },
   "comparison": {
     "badge": "Comparativo de Desempenho",
@@ -134,44 +134,20 @@
     "desc": "Respostas completas sobre o SaveAMedia, qualidade de vídeo, como salvar no iPhone e Android e conformidade com direitos autorais.",
     "items": [
       {
-        "q": "Como baixar Reels do Instagram em 1080p Full HD?",
-        "a": "Abra o Instagram, copie o link do Reel ou vídeo público desejado, cole no campo do SaveAMedia acima e clique em Baixar. Assista à prévia no reprodutor integrado e clique em Baixar HD 1080p MP4 para salvar na resolução máxima diretamente no seu aparelho."
+        "q": "O SaveAMedia é realmente gratuito e seguro?",
+        "a": "Sim, nossa ferramenta é 100% grátis, sem limites de download diários e livre de anúncios invasivos. Nós nunca solicitamos sua senha, não armazenamos seus vídeos e não coletamos dados pessoais."
       },
       {
-        "q": "O download de Reels e Vídeos é totalmente gratuito e ilimitado?",
-        "a": "Sim! O SaveAMedia é 100% gratuito, com downloads ilimitados diários, sem limites de arquivos, sem mensalidades e sem necessidade de cadastro ou login."
+        "q": "Como salvar os Reels direto na galeria do iPhone ou Android?",
+        "a": "No Android, o arquivo MP4 vai direto para a pasta Downloads e aparece na sua Galeria. No iPhone (Safari), toque em 'Baixar', abra o arquivo baixado, clique em 'Compartilhar' e escolha 'Salvar Vídeo' para mandar ao app Fotos."
       },
       {
-        "q": "O SaveAMedia adiciona marcas d'água aos vídeos baixados?",
-        "a": "Não. O SaveAMedia baixa o vídeo MP4 master original diretamente dos servidores públicos do Instagram sem inserir nenhuma marca d'água, logo ou compressão extra."
+        "q": "Os vídeos vêm com marca d'água ou perdem qualidade?",
+        "a": "Não, o SaveAMedia entrega o arquivo master original com resolução de até 1080p sem adicionar nenhuma marca d'água ou logotipo. O vídeo que você baixa é exatamente igual ao publicado pelo criador."
       },
       {
-        "q": "Como salvar os Reels baixados no Rolo da Câmera do iPhone?",
-        "a": "No Safari do iPhone (iOS 13 ou superior), toque em Baixar MP4. Depois, toque na seta azul de downloads no Safari, abra o vídeo em Arquivos → Downloads, toque em Compartilhar e escolha Salvar Vídeo para enviá-lo ao aplicativo Fotos."
-      },
-      {
-        "q": "Onde os vídeos baixados ficam salvos no Android e no PC?",
-        "a": "Os arquivos são salvos na pasta padrão de Downloads do seu aparelho no formato .mp4 e aparecem imediatamente na Galeria, Google Fotos ou no Explorador de Arquivos."
-      },
-      {
-        "q": "Posso baixar apenas o áudio ou música (MP3) de um Reel?",
-        "a": "Sim! O SaveAMedia isola a faixa de áudio e disponibiliza a opção Extrair Áudio Original (MP3) em alta qualidade para você salvar músicas e efeitos sonoros facilmente."
-      },
-      {
-        "q": "Consigo baixar vídeos de contas privadas ou Melhores Amigos?",
-        "a": "Não. O SaveAMedia respeita a privacidade dos criadores e normas de segurança. Apenas conteúdos públicos do Instagram podem ser processados."
-      },
-      {
-        "q": "Por que o Reel baixado está sem som?",
-        "a": "Verifique se o reprodutor ou o volume do seu aparelho não estão no mudo. Em alguns casos raros, músicas comerciais licenciadas têm reprodução restrita em certos países pelo próprio Instagram; em áudios originais, o som é baixado perfeitamente."
-      },
-      {
-        "q": "Por que meu link deu erro ou mostrou 'Mídia Indisponível'?",
-        "a": "Geralmente ocorre se: (1) O perfil for privado; (2) O autor tiver excluído o post; (3) O link copiado estiver incompleto; ou (4) Os nós do Instagram estiverem sob limite temporário de requisições. Tente abrir o link em uma aba anônima e tente novamente."
-      },
-      {
-        "q": "É seguro e legal baixar Reels do Instagram?",
-        "a": "Sim. Baixar mídias públicas para visualização pessoal offline é permitido pelas regras de uso justo (Fair Use). Não recomendamos revender ou monetizar conteúdos protegidos sem autorização do autor. O SaveAMedia é totalmente seguro e não armazena dados de navegação."
+        "q": "É legal baixar Reels do Instagram?",
+        "a": "Sim, baixar mídias públicas para visualização pessoal offline é permitido pelas diretrizes de uso justo (Fair Use). Apenas certifique-se de não comercializar ou republicar conteúdos protegidos sem autorização prévia do autor."
       }
     ]
   },
