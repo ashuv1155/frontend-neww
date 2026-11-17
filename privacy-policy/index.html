@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
   <!-- Essential SEO & Viewport Meta Tags -->
@@ -100,10 +100,10 @@
   <script>
     try {
       const savedTheme = localStorage.getItem('saveamedia-theme');
-      if (savedTheme === 'light') {
-        document.documentElement.classList.remove('dark');
-      } else {
+      if (savedTheme === 'dark') {
         document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
       }
     } catch (e) { }
   </script>

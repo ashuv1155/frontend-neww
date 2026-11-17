@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -30,15 +30,11 @@
           colors: {
             brand: {
               50: '#EEF2FF',
+              100: '#E0E7FF',
               400: '#818CF8',
               500: '#6366F1',
               600: '#4F46E5',
               700: '#4338CA'
-            },
-            surface: {
-              dark: '#070B14',
-              card: '#0F172A',
-              border: '#1E293B'
             }
           }
         }
@@ -46,41 +42,38 @@
     };
   </script>
   <style>
-    body { background-color: #070B14; color: #F8FAFC; }
-    .glass-panel {
-      background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .pulse-dot {
-      box-shadow: 0 0 10px #10B981, 0 0 20px #10B981;
+    body { background-color: #F8FAFC; color: #0F172A; }
+    .clean-card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
     }
   </style>
 </head>
 
-<body class="min-h-screen font-sans antialiased text-slate-100 flex flex-col justify-between">
+<body class="min-h-screen font-sans antialiased text-slate-800 flex flex-col justify-between bg-slate-50">
 
   <!-- ================= AUTHENTICATION MODAL ================= -->
-  <div id="loginOverlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md px-4">
-    <div class="glass-panel w-full max-w-md p-8 rounded-2xl shadow-2xl border border-brand-500/30 text-center animate-in fade-in zoom-in duration-200">
-      <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-indigo-400 mx-auto flex items-center justify-center shadow-lg shadow-brand-500/30 mb-6">
+  <div id="loginOverlay" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm px-4">
+    <div class="clean-card w-full max-w-md p-8 rounded-2xl shadow-2xl border border-slate-200 text-center animate-in fade-in zoom-in duration-200">
+      <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-indigo-500 mx-auto flex items-center justify-center shadow-lg shadow-brand-500/20 mb-6">
         <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
         </svg>
       </div>
 
-      <h1 class="font-display text-2xl font-black text-white tracking-tight">Admin Realtime Monitor</h1>
-      <p class="text-sm text-slate-400 mt-2">Enter your administrator access key to stream live telemetry.</p>
+      <h1 class="font-display text-2xl font-black text-slate-900 tracking-tight">Admin Realtime Monitor</h1>
+      <p class="text-sm text-slate-500 mt-2">Enter your administrator access key to stream live telemetry.</p>
 
       <form id="loginForm" class="mt-6 space-y-4">
         <div>
           <input type="password" id="passwordInput" placeholder="Enter admin password" required
-            class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 text-center text-lg tracking-widest transition" />
+            class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 text-center text-lg tracking-widest transition" />
         </div>
-        <p id="loginError" class="text-xs text-rose-400 hidden font-medium">Invalid password. Please try again.</p>
+        <p id="loginError" class="text-xs text-rose-500 hidden font-medium">Invalid password. Please try again.</p>
 
         <button type="submit" id="loginBtn"
-          class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-semibold shadow-lg shadow-brand-500/25 transition active:scale-[0.98]">
+          class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-semibold shadow-md shadow-brand-500/20 transition active:scale-[0.98]">
           Unlock Realtime Dashboard
         </button>
       </form>
@@ -90,42 +83,42 @@
   <!-- ================= MAIN REALTIME DASHBOARD UI ================= -->
   <div id="dashboardContent" class="hidden min-h-screen flex flex-col">
     <!-- Top Header -->
-    <header class="glass-panel sticky top-0 z-40 border-b border-slate-800 px-6 py-4">
+    <header class="bg-white sticky top-0 z-40 border-b border-slate-200 px-6 py-4 shadow-sm">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-indigo-600 flex items-center justify-center font-black text-white shadow-md shadow-brand-500/30">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-indigo-600 flex items-center justify-center font-black text-white shadow-sm shadow-brand-500/20">
             S
           </div>
           <div>
             <div class="flex items-center gap-2">
-              <span class="font-display font-extrabold text-lg text-white">Save<span class="text-brand-500">AMedia</span></span>
-              <span class="flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse pulse-dot"></span>
+              <span class="font-display font-extrabold text-lg text-slate-900">Save<span class="text-brand-600">AMedia</span></span>
+              <span class="flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                 LIVE REALTIME
               </span>
             </div>
-            <p class="text-xs text-slate-400">saveamedia.com • Cloudflare Edge Telemetry + Render</p>
+            <p class="text-xs text-slate-500">saveamedia.com • Cloudflare Edge Telemetry + Render</p>
           </div>
         </div>
 
         <div class="flex items-center gap-3">
           <!-- Live Auto Refresh Indicator -->
-          <div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-xs">
-            <span class="text-slate-400">Auto Sync:</span>
-            <span id="countdownTimer" class="font-mono text-brand-400 font-bold">15s</span>
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 border border-slate-200 text-xs">
+            <span class="text-slate-500 font-medium">Auto Sync:</span>
+            <span id="countdownTimer" class="font-mono text-brand-600 font-bold">15s</span>
           </div>
 
-          <button id="refreshBtn" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-brand-600/20 hover:bg-brand-600/30 text-xs font-semibold text-brand-300 border border-brand-500/30 transition">
+          <button id="refreshBtn" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-brand-50 hover:bg-brand-100 text-xs font-semibold text-brand-700 border border-brand-200 transition">
             <svg id="refreshIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
             Sync Now
           </button>
 
-          <a href="/" target="_blank" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition">
+          <a href="/" target="_blank" class="px-3.5 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700 transition shadow-sm">
             View Site ↗
           </a>
-          <button id="logoutBtn" class="px-3.5 py-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-xs font-semibold text-rose-400 border border-rose-500/20 transition">
+          <button id="logoutBtn" class="px-3.5 py-2 rounded-xl bg-rose-50 hover:bg-rose-100 text-xs font-semibold text-rose-600 border border-rose-200 transition">
             Log Out
           </button>
         </div>
@@ -136,30 +129,30 @@
     <main class="flex-1 max-w-7xl w-full mx-auto p-6 space-y-6">
 
       <!-- Realtime Activity Banner -->
-      <div class="glass-panel p-4 rounded-2xl border border-brand-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-brand-950/40 to-slate-900/60">
+      <div class="clean-card p-5 rounded-2xl border border-brand-100 flex flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-brand-50/70 via-indigo-50/40 to-white">
         <div class="flex items-center gap-3">
-          <div class="p-2.5 rounded-xl bg-brand-500/10 text-brand-400 border border-brand-500/20">
+          <div class="p-2.5 rounded-xl bg-brand-100 text-brand-700 border border-brand-200">
             <svg class="w-6 h-6 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
           <div>
-            <h2 class="text-sm font-bold text-white flex items-center gap-2">
+            <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2">
               Realtime Edge Pulse (Last 10 Minutes)
-              <span id="realtimeSpeedBadge" class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300">Active</span>
+              <span id="realtimeSpeedBadge" class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">Active</span>
             </h2>
-            <p class="text-xs text-slate-400">Streaming live visitors, path requests, and edge throughput directly from Cloudflare</p>
+            <p class="text-xs text-slate-500">Streaming live visitors, path requests, and edge throughput directly from Cloudflare</p>
           </div>
         </div>
 
         <div class="flex items-center gap-6">
           <div class="text-center sm:text-right">
-            <span class="block text-[10px] text-slate-400 uppercase font-semibold">Active In Last 10m</span>
-            <span id="kpiTenMinReqs" class="text-2xl font-display font-extrabold text-emerald-400">--</span>
+            <span class="block text-[10px] text-slate-500 uppercase font-semibold">Active In Last 10m</span>
+            <span id="kpiTenMinReqs" class="text-2xl font-display font-extrabold text-emerald-600">--</span>
           </div>
           <div class="text-center sm:text-right">
-            <span class="block text-[10px] text-slate-400 uppercase font-semibold">Realtime Bandwidth</span>
-            <span id="kpiTenMinBytes" class="text-2xl font-display font-extrabold text-brand-400">--</span>
+            <span class="block text-[10px] text-slate-500 uppercase font-semibold">Realtime Bandwidth</span>
+            <span id="kpiTenMinBytes" class="text-2xl font-display font-extrabold text-brand-600">--</span>
           </div>
         </div>
       </div>
@@ -167,27 +160,27 @@
       <!-- Key Metric Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <!-- Unique Visitors Today -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-brand-500/40 transition">
+        <div class="clean-card p-5 rounded-2xl hover:border-brand-300 transition">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-medium text-slate-400 uppercase tracking-wider">Unique Visitors (Today)</span>
-            <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
+            <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Unique Visitors (Today)</span>
+            <div class="p-2 rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100">
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
           </div>
           <div class="mt-3 flex items-baseline gap-2">
-            <span id="kpiUniques" class="text-3xl font-display font-extrabold text-white">--</span>
-            <span class="text-xs font-semibold text-emerald-400">Live IPs</span>
+            <span id="kpiUniques" class="text-3xl font-display font-extrabold text-slate-900">--</span>
+            <span class="text-xs font-semibold text-emerald-600">Live IPs</span>
           </div>
-          <p class="text-xs text-slate-500 mt-1">Verified unique edge visitors</p>
+          <p class="text-xs text-slate-400 mt-1">Verified unique edge visitors</p>
         </div>
 
         <!-- Total Pageviews -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-brand-500/40 transition">
+        <div class="clean-card p-5 rounded-2xl hover:border-brand-300 transition">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-medium text-slate-400 uppercase tracking-wider">Total Pageviews</span>
-            <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+            <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Total Pageviews</span>
+            <div class="p-2 rounded-lg bg-emerald-50 text-emerald-600 border border-emerald-100">
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -195,44 +188,44 @@
             </div>
           </div>
           <div class="mt-3 flex items-baseline gap-2">
-            <span id="kpiPageviews" class="text-3xl font-display font-extrabold text-white">--</span>
-            <span class="text-xs font-semibold text-emerald-400">Renders</span>
+            <span id="kpiPageviews" class="text-3xl font-display font-extrabold text-slate-900">--</span>
+            <span class="text-xs font-semibold text-emerald-600">Renders</span>
           </div>
-          <p class="text-xs text-slate-500 mt-1">Total page impressions rendered</p>
+          <p class="text-xs text-slate-400 mt-1">Total page impressions rendered</p>
         </div>
 
         <!-- Total Requests -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-brand-500/40 transition">
+        <div class="clean-card p-5 rounded-2xl hover:border-brand-300 transition">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-medium text-slate-400 uppercase tracking-wider">Total Requests</span>
-            <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400">
+            <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Total Requests</span>
+            <div class="p-2 rounded-lg bg-blue-50 text-blue-600 border border-blue-100">
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
           </div>
           <div class="mt-3 flex items-baseline gap-2">
-            <span id="kpiRequests" class="text-3xl font-display font-extrabold text-white">--</span>
-            <span class="text-xs font-semibold text-blue-400">HTTP/2 &amp; HTTP/3</span>
+            <span id="kpiRequests" class="text-3xl font-display font-extrabold text-slate-900">--</span>
+            <span class="text-xs font-semibold text-blue-600">HTTP/2 &amp; HTTP/3</span>
           </div>
-          <p class="text-xs text-slate-500 mt-1">Assets, HTML &amp; API downloads</p>
+          <p class="text-xs text-slate-400 mt-1">Assets, HTML &amp; API downloads</p>
         </div>
 
         <!-- Bandwidth Cached -->
-        <div class="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-brand-500/40 transition">
+        <div class="clean-card p-5 rounded-2xl hover:border-brand-300 transition">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-medium text-slate-400 uppercase tracking-wider">Data Transferred</span>
-            <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400">
+            <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Data Transferred</span>
+            <div class="p-2 rounded-lg bg-purple-50 text-purple-600 border border-purple-100">
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
               </svg>
             </div>
           </div>
           <div class="mt-3 flex items-baseline gap-2">
-            <span id="kpiBytes" class="text-3xl font-display font-extrabold text-white">--</span>
-            <span class="text-xs font-semibold text-purple-400">Total Size</span>
+            <span id="kpiBytes" class="text-3xl font-display font-extrabold text-slate-900">--</span>
+            <span class="text-xs font-semibold text-purple-600">Total Size</span>
           </div>
-          <p class="text-xs text-slate-500 mt-1">Delivered via Edge CDN</p>
+          <p class="text-xs text-slate-400 mt-1">Delivered via Edge CDN</p>
         </div>
       </div>
 
@@ -240,30 +233,30 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         <!-- Live Request Stream by URL Path -->
-        <div class="lg:col-span-2 glass-panel p-6 rounded-2xl border border-slate-800">
+        <div class="lg:col-span-2 clean-card p-6 rounded-2xl">
           <div class="flex items-center justify-between mb-4">
             <div>
-              <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+              <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
                 Realtime Requests by Page / Route
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
               </h3>
-              <p class="text-xs text-slate-400">Top requested localized landing pages &amp; endpoints (Last 10 min)</p>
+              <p class="text-xs text-slate-500">Top requested localized landing pages &amp; endpoints (Last 10 min)</p>
             </div>
-            <span class="px-2.5 py-1 text-xs rounded-lg bg-brand-500/10 text-brand-400 border border-brand-500/20 font-mono">Live Stream</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-brand-50 text-brand-700 border border-brand-200 font-mono font-semibold">Live Stream</span>
           </div>
           
           <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
-              <thead class="text-slate-400 uppercase border-b border-slate-800 text-[10px]">
+              <thead class="text-slate-500 uppercase border-b border-slate-200 text-[10px] bg-slate-50">
                 <tr>
                   <th class="py-2.5 px-3">Path / Resource</th>
                   <th class="py-2.5 px-3">Visitor Country</th>
                   <th class="py-2.5 px-3 text-right">Recent Hits</th>
                 </tr>
               </thead>
-              <tbody id="realtimePathsBody" class="divide-y divide-slate-800/60 font-mono">
+              <tbody id="realtimePathsBody" class="divide-y divide-slate-100 font-mono">
                 <tr>
-                  <td colspan="3" class="py-6 text-center text-slate-500 font-sans">Connecting to realtime telemetry...</td>
+                  <td colspan="3" class="py-6 text-center text-slate-400 font-sans">Connecting to realtime telemetry...</td>
                 </tr>
               </tbody>
             </table>
@@ -271,12 +264,12 @@
         </div>
 
         <!-- Top Countries Polar / Doughnut -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="clean-card p-6 rounded-2xl flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <div>
-                <h3 class="font-display font-bold text-lg text-white">Audience by Country</h3>
-                <p class="text-xs text-slate-400">Global visitor breakdown</p>
+                <h3 class="font-display font-bold text-lg text-slate-900">Audience by Country</h3>
+                <p class="text-xs text-slate-500">Global visitor breakdown</p>
               </div>
             </div>
             <div class="h-48 w-full flex items-center justify-center">
@@ -290,13 +283,13 @@
       </div>
 
       <!-- Daily Trend Chart -->
-      <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+      <div class="clean-card p-6 rounded-2xl">
         <div class="flex items-center justify-between mb-4">
           <div>
-            <h3 class="font-display font-bold text-lg text-white">Daily Traffic History (Last 7 Days)</h3>
-            <p class="text-xs text-slate-400">Unique visitors, page impressions and total edge requests</p>
+            <h3 class="font-display font-bold text-lg text-slate-900">Daily Traffic History (Last 7 Days)</h3>
+            <p class="text-xs text-slate-500">Unique visitors, page impressions and total edge requests</p>
           </div>
-          <span class="px-2.5 py-1 text-xs rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">7-Day Aggregation</span>
+          <span class="px-2.5 py-1 text-xs rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold">7-Day Aggregation</span>
         </div>
         <div class="h-64 sm:h-72 w-full">
           <canvas id="trafficChart"></canvas>
@@ -306,61 +299,61 @@
       <!-- Backend & Free-Tier Guard System -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- Render Backend Status & Health -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-          <h3 class="font-display font-bold text-lg text-white mb-1">Backend Infrastructure</h3>
-          <p class="text-xs text-slate-400 mb-4">FastAPI on Render (Free Tier Protected)</p>
+        <div class="clean-card p-6 rounded-2xl">
+          <h3 class="font-display font-bold text-lg text-slate-900 mb-1">Backend Infrastructure</h3>
+          <p class="text-xs text-slate-500 mb-4">FastAPI on Render (Free Tier Protected)</p>
 
           <div class="space-y-3">
-            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
               <div class="flex items-center gap-2.5">
                 <span id="backendStatusDot" class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span class="text-xs font-semibold text-slate-200">Render API Status</span>
+                <span class="text-xs font-semibold text-slate-700">Render API Status</span>
               </div>
-              <span id="backendStatus" class="text-xs font-mono text-emerald-400">Checking...</span>
+              <span id="backendStatus" class="text-xs font-mono text-emerald-700 font-semibold">Checking...</span>
             </div>
 
-            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between">
-              <span class="text-xs text-slate-400">API Response Latency</span>
-              <span id="backendPing" class="text-xs font-mono text-brand-400">-- ms</span>
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+              <span class="text-xs text-slate-500">API Response Latency</span>
+              <span id="backendPing" class="text-xs font-mono text-brand-600 font-semibold">-- ms</span>
             </div>
 
-            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between">
-              <span class="text-xs text-slate-400">Sleep Exhaustion Guard</span>
-              <span class="text-xs font-semibold text-emerald-400">Active (0% Waste)</span>
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Sleep Exhaustion Guard</span>
+              <span class="text-xs font-semibold text-emerald-700">Active (0% Waste)</span>
             </div>
           </div>
         </div>
 
         <!-- Google Search Console (GSC) API Hub -->
-        <div class="lg:col-span-2 glass-panel p-6 rounded-2xl border border-slate-800">
+        <div class="lg:col-span-2 clean-card p-6 rounded-2xl">
           <div class="flex items-center justify-between mb-2">
             <div>
-              <h3 class="font-display font-bold text-lg text-white">Google Search Console (GSC) API Hub</h3>
-              <p class="text-xs text-slate-400">Prepared for keyword ranking, CTR, impressions and query tracking</p>
+              <h3 class="font-display font-bold text-lg text-slate-900">Google Search Console (GSC) API Hub</h3>
+              <p class="text-xs text-slate-500">Prepared for keyword ranking, CTR, impressions and query tracking</p>
             </div>
-            <span class="px-2.5 py-1 text-xs rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20">Phase 2 Ready</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-amber-50 text-amber-700 border border-amber-200 font-semibold">Phase 2 Ready</span>
           </div>
 
-          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3 mt-4">
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Your sitemap (<code class="text-brand-400">/sitemap.xml</code>) with 9 localized hreflang targets is ready for indexing. When you connect your Google Cloud Service Account, this section will stream live keyword rankings, impressions, and top click queries directly from Google.
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3 mt-4">
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Your sitemap (<code class="text-brand-600 font-bold">/sitemap.xml</code>) with 9 localized hreflang targets is ready for indexing. When you connect your Google Cloud Service Account, this section will stream live keyword rankings, impressions, and top click queries directly from Google.
             </p>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
-              <div class="p-3 rounded-lg bg-slate-800/60 text-center">
-                <span class="block text-slate-400 text-[10px] uppercase font-bold">Total Clicks</span>
-                <span class="font-display text-lg font-bold text-white">Ready</span>
+              <div class="p-3 rounded-lg bg-white border border-slate-200 text-center shadow-sm">
+                <span class="block text-slate-500 text-[10px] uppercase font-bold">Total Clicks</span>
+                <span class="font-display text-lg font-bold text-slate-900">Ready</span>
               </div>
-              <div class="p-3 rounded-lg bg-slate-800/60 text-center">
-                <span class="block text-slate-400 text-[10px] uppercase font-bold">Impressions</span>
-                <span class="font-display text-lg font-bold text-white">Ready</span>
+              <div class="p-3 rounded-lg bg-white border border-slate-200 text-center shadow-sm">
+                <span class="block text-slate-500 text-[10px] uppercase font-bold">Impressions</span>
+                <span class="font-display text-lg font-bold text-slate-900">Ready</span>
               </div>
-              <div class="p-3 rounded-lg bg-slate-800/60 text-center">
-                <span class="block text-slate-400 text-[10px] uppercase font-bold">Average CTR</span>
-                <span class="font-display text-lg font-bold text-white">Ready</span>
+              <div class="p-3 rounded-lg bg-white border border-slate-200 text-center shadow-sm">
+                <span class="block text-slate-500 text-[10px] uppercase font-bold">Average CTR</span>
+                <span class="font-display text-lg font-bold text-slate-900">Ready</span>
               </div>
-              <div class="p-3 rounded-lg bg-slate-800/60 text-center">
-                <span class="block text-slate-400 text-[10px] uppercase font-bold">Avg Position</span>
-                <span class="font-display text-lg font-bold text-white">Ready</span>
+              <div class="p-3 rounded-lg bg-white border border-slate-200 text-center shadow-sm">
+                <span class="block text-slate-500 text-[10px] uppercase font-bold">Avg Position</span>
+                <span class="font-display text-lg font-bold text-slate-900">Ready</span>
               </div>
             </div>
           </div>
@@ -370,7 +363,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="glass-panel border-t border-slate-800 px-6 py-4 text-center text-xs text-slate-500">
+    <footer class="bg-white border-t border-slate-200 px-6 py-4 text-center text-xs text-slate-500 shadow-sm">
       <span>SaveAMedia Enterprise Realtime Suite • Cloudflare Live Telemetry • Free-Tier Optimized</span>
     </footer>
   </div>
@@ -562,7 +555,7 @@
       if (!paths || paths.length === 0) {
         tbody.innerHTML = `
           <tr>
-            <td colspan="3" class="py-4 text-center text-slate-500 font-sans">
+            <td colspan="3" class="py-4 text-center text-slate-400 font-sans">
               Waiting for new incoming visits in the last 10 minutes...
             </td>
           </tr>
@@ -572,20 +565,20 @@
 
       paths.forEach(p => {
         const tr = document.createElement('tr');
-        tr.className = "hover:bg-slate-800/40 transition";
+        tr.className = "hover:bg-slate-50 transition";
         const path = p.dimensions.clientRequestPath || '/';
         const country = p.dimensions.clientCountryName || 'Global';
         const count = p.count || 1;
 
         tr.innerHTML = `
-          <td class="py-2.5 px-3 text-slate-200 flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
-            <span class="truncate max-w-xs">${escapeHtml(path)}</span>
+          <td class="py-2.5 px-3 text-slate-800 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+            <span class="truncate max-w-xs font-semibold">${escapeHtml(path)}</span>
           </td>
-          <td class="py-2.5 px-3 text-slate-400 font-sans">
-            <span class="px-2 py-0.5 rounded bg-slate-800 text-[11px] font-semibold text-slate-300">${escapeHtml(country)}</span>
+          <td class="py-2.5 px-3 text-slate-600 font-sans">
+            <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-[11px] font-semibold text-slate-700">${escapeHtml(country)}</span>
           </td>
-          <td class="py-2.5 px-3 text-right font-bold text-emerald-400 font-mono">
+          <td class="py-2.5 px-3 text-right font-bold text-emerald-600 font-mono">
             ${count.toLocaleString()}
           </td>
         `;
@@ -617,7 +610,7 @@
               label: 'Unique Visitors',
               data: uniquesData.length ? uniquesData : [0],
               borderColor: '#6366F1',
-              backgroundColor: 'rgba(99, 102, 241, 0.12)',
+              backgroundColor: 'rgba(99, 102, 241, 0.08)',
               fill: true,
               tension: 0.35,
               borderWidth: 2
@@ -646,17 +639,17 @@
           maintainAspectRatio: false,
           plugins: {
             legend: {
-              labels: { color: '#94A3B8', font: { family: 'Inter', size: 11 } }
+              labels: { color: '#64748B', font: { family: 'Inter', size: 11, weight: '500' } }
             }
           },
           scales: {
             x: {
-              grid: { color: 'rgba(255,255,255,0.05)' },
-              ticks: { color: '#94A3B8', font: { family: 'Inter', size: 10 } }
+              grid: { color: 'rgba(0,0,0,0.04)' },
+              ticks: { color: '#64748B', font: { family: 'Inter', size: 10 } }
             },
             y: {
-              grid: { color: 'rgba(255,255,255,0.05)' },
-              ticks: { color: '#94A3B8', font: { family: 'Inter', size: 10 } }
+              grid: { color: 'rgba(0,0,0,0.04)' },
+              ticks: { color: '#64748B', font: { family: 'Inter', size: 10 } }
             }
           }
         }
@@ -679,7 +672,8 @@
           datasets: [{
             data: counts,
             backgroundColor: colors,
-            borderWidth: 0
+            borderWidth: 2,
+            borderColor: '#FFFFFF'
           }]
         },
         options: {
@@ -697,13 +691,13 @@
       listContainer.innerHTML = '';
       topCountries.slice(0, 5).forEach((c, idx) => {
         const item = document.createElement('div');
-        item.className = 'flex items-center justify-between text-slate-300';
+        item.className = 'flex items-center justify-between text-slate-600';
         item.innerHTML = `
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${colors[idx % colors.length]}"></span>
-            <span class="font-medium">${escapeHtml(c.dimensions.clientCountryName)}</span>
+            <span class="font-medium text-slate-700">${escapeHtml(c.dimensions.clientCountryName)}</span>
           </div>
-          <span class="font-mono text-slate-400 font-semibold">${c.count.toLocaleString()} reqs</span>
+          <span class="font-mono text-slate-500 font-semibold">${c.count.toLocaleString()} reqs</span>
         `;
         listContainer.appendChild(item);
       });
@@ -722,7 +716,7 @@
         if (res && res.ok) {
           pingEl.innerText = `${duration} ms`;
           statusEl.innerText = "Healthy (200)";
-          statusEl.className = "text-xs font-mono text-emerald-400";
+          statusEl.className = "text-xs font-mono text-emerald-600 font-bold";
           dotEl.className = "w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse";
         } else {
           pingEl.innerText = `${duration} ms (Waking)`;
