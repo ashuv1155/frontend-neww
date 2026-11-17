@@ -10,13 +10,13 @@
 /ar/* /ar/index.html 200
 
 # Static Legal & Compliance Pages (Google AdSense)
-/privacy-policy /privacy-policy.html 200
-/terms /terms.html 200
-/about /about.html 200
-/contact /contact.html 200
-/dmca /dmca.html 200
-/disclaimer /disclaimer.html 200
-/cookie-policy /cookie-policy.html 200
+/privacy-policy.html /privacy-policy 301
+/terms.html /terms 301
+/about.html /about 301
+/contact.html /contact 301
+/dmca.html /dmca 301
+/disclaimer.html /disclaimer 301
+/cookie-policy.html /cookie-policy 301
 
 # SEO Keyword Aliases (301 Permanent Redirect to Home)
 /instagram-reel-downloader / 301
