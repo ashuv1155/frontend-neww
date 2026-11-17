@@ -29,6 +29,3 @@
 /insta-downloader / 301
 /save-instagram-reels / 301
 /download-instagram-reels / 301
-
-# SPA Root Fallback
-/* /index.html 200
